@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-02-13T19:21:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.seagate.com",
+    "originPage": "Seagate homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero-carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "eyebrow + heading + description + 2 CTAs + background image",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero sections",
+      "landing pages with rotating banners",
+      "promotional carousel sections"
+    ],
+    "notSuitableFor": [
+      "product detail pages",
+      "simple single-image heroes",
+      "text-only sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-13T19:21:00.000Z"
+  }
+}

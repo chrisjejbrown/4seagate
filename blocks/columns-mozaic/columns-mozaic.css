@@ -1,0 +1,33 @@
+.columns-mozaic > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-mozaic img {
+  width: 100%;
+}
+
+.columns-mozaic > div > div {
+  order: 1;
+}
+
+.columns-mozaic > div > .columns-mozaic-img-col {
+  order: 0;
+}
+
+.columns-mozaic > div > .columns-mozaic-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-mozaic > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-mozaic > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-product",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-02-13T19:21:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.seagate.com",
+    "originPage": "Seagate homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + badge + product name + price + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product listing grids",
+      "featured products sections",
+      "e-commerce product cards"
+    ],
+    "notSuitableFor": [
+      "article or blog listings",
+      "category navigation",
+      "text-only card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-13T19:21:00.000Z"
+  }
+}

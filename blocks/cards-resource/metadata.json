@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-resource",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-02-13T19:21:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.seagate.com",
+    "originPage": "Seagate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "resource-cards",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "eyebrow + image + heading + description",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "resource listings",
+      "article and blog cards",
+      "AI feature showcases",
+      "latest news sections"
+    ],
+    "notSuitableFor": [
+      "product cards with prices",
+      "category navigation cards",
+      "simple icon-based cards"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-13T19:21:00.000Z"
+  }
+}

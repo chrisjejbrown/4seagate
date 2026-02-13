@@ -1,0 +1,11 @@
+{
+  "data": [
+    { "key": "carousel", "value": "Carousel" },
+    { "key": "previousslide", "value": "Previous Slide" },
+    { "key": "nextslide", "value": "Next Slide" },
+    { "key": "showslide", "value": "Show Slide" },
+    { "key": "of", "value": "of" },
+    { "key": "carouselslidecontrols", "value": "Carousel Slide Controls" }
+  ],
+  ":type": "sheet"
+}

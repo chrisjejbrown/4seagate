@@ -1,0 +1,40 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-02-13T19:21:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.seagate.com",
+    "originPage": "Seagate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "promotional-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + optional CTA + background image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "value proposition banners",
+      "promotional sections with background images",
+      "dark-themed hero sections",
+      "ESG and corporate messaging"
+    ],
+    "notSuitableFor": [
+      "text-only sections without images",
+      "multi-column layouts",
+      "card grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-13T19:21:00.000Z"
+  }
+}

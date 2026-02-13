@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-mozaic",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-02-13T19:21:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.seagate.com",
+    "originPage": "Seagate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "feature-details",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "left: heading + description + CTA | right: 4 feature items with icons",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "technology feature details",
+      "product specification layouts",
+      "two-column content with feature lists"
+    ],
+    "notSuitableFor": [
+      "image-heavy layouts",
+      "simple text columns",
+      "card grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-13T19:21:00.000Z"
+  }
+}
