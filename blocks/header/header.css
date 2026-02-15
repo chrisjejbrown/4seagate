@@ -160,6 +160,7 @@ header .nav-brand ul {
 header nav .nav-brand img {
   width: 150px;
   height: auto;
+  filter: brightness(0) invert(1);
 }
 
 /* sections */

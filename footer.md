@@ -1,4 +1,4 @@
-![Seagate](https://www.seagate.com/content/dam/seagate/assets/global-navigation/seagate-logo-text-only.svg)
+![Seagate](/icons/seagate-logo.svg)
 
 ---
 
