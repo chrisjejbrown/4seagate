@@ -1,6 +1,7 @@
-/* header and nav layout */
+/* header and nav layout - Seagate dark nav */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--dark-color);
+  color: var(--text-color-inverted);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -15,7 +16,7 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1440px;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
@@ -35,7 +36,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: 1440px;
     padding: 0 32px;
   }
 
@@ -51,7 +52,13 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+  color: var(--text-color-inverted);
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 /* hamburger */
@@ -68,8 +75,8 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: inherit;
+  background-color: transparent;
+  color: var(--text-color-inverted);
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
@@ -138,14 +145,20 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
+  flex-basis: 150px;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
 }
 
+header .nav-brand ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 header nav .nav-brand img {
-  width: 128px;
+  width: 150px;
   height: auto;
 }
 
@@ -170,7 +183,7 @@ header nav .nav-sections ul {
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -238,10 +251,11 @@ header nav .nav-sections ul > li > ul > li {
     display: block;
     position: absolute;
     left: -24px;
-    width: 200px;
+    width: 220px;
     top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
+    padding: 16px 24px;
+    background-color: var(--dark-color);
+    border: 1px solid rgb(255 255 255 / 10%);
     white-space: initial;
     z-index: 1;
   }
@@ -255,17 +269,46 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+    border-bottom: 8px solid var(--dark-color);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li a:any-link {
+    font-weight: 400;
+    font-size: var(--body-font-size-xs);
+    color: rgb(255 255 255 / 80%);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li a:hover {
+    color: var(--accent-color);
   }
 }
 
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+header nav .nav-tools ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+
+header nav .nav-tools a:any-link {
+  font-size: var(--body-font-size-xs);
+  font-weight: 400;
+  color: var(--text-color-inverted);
+}
+
+header nav .nav-tools a:hover {
+  color: var(--accent-color);
 }
 
 header nav .nav-tools .button {
@@ -280,7 +323,7 @@ header nav .nav-tools .button {
 header .breadcrumbs {
   display: none;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1440px;
   height: var(--breadcrumbs-height);
   padding: 0 24px;
   font-size: var(--body-font-size-xs);
@@ -300,7 +343,7 @@ header .breadcrumbs ol {
 /* stylelint-disable-next-line no-descending-specificity */
 header .breadcrumbs ol li {
   padding: 0;
-  color: var(--dark-color);
+  color: rgb(255 255 255 / 60%);
 }
 
 header .breadcrumbs ol li:not(:last-child)::after {
@@ -310,13 +353,21 @@ header .breadcrumbs ol li:not(:last-child)::after {
 
 /* stylelint-disable-next-line no-descending-specificity */
 header .breadcrumbs ol li[aria-current] {
-  color: var(--text-color);
+  color: var(--text-color-inverted);
+}
+
+header .breadcrumbs ol li a:any-link {
+  color: rgb(255 255 255 / 60%);
+}
+
+header .breadcrumbs ol li a:hover {
+  color: var(--accent-color);
 }
 
 @media (width >= 900px) {
   header .breadcrumbs {
     display: block;
-    max-width: 1264px;
+    max-width: 1440px;
     padding: 0 32px;
   }
 }

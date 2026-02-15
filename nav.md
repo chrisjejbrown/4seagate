@@ -1,0 +1,43 @@
+- [![Seagate](https://www.seagate.com/content/dam/seagate/assets/global-navigation/seagate-logo-text-only.svg)](/)
+
+---
+
+- **[Products](https://www.seagate.com/products/)**
+  - [External Hard Drives](https://www.seagate.com/products/external-hard-drives/)
+  - [Internal Hard Drives](https://www.seagate.com/products/hard-drives/)
+  - [External SSDs](https://www.seagate.com/products/external-ssds/)
+  - [Internal SSDs](https://www.seagate.com/products/internal-ssds/)
+  - [Enterprise Hard Drives & SSDs](https://www.seagate.com/products/enterprise-drives/)
+  - [Data Storage Systems](https://www.seagate.com/products/storage/data-storage-systems/)
+  - [Enterprise Storage Services](https://www.seagate.com/products/enterprise-storage-services/)
+- **Solutions**
+  - [Backup & Recovery](https://www.seagate.com/solutions/backup/backup-and-recovery/)
+  - [Big Data Analytics (AI/ML)](https://www.seagate.com/solutions/data/big-data/)
+  - [Cloud Backup](https://www.seagate.com/solutions/cloud/cloud-backup/)
+  - [Data Migration](https://www.seagate.com/cloud/)
+  - [High Performance Computing](https://www.seagate.com/solutions/high-performance-computing/)
+  - [Video Analytics](https://www.seagate.com/solutions/video-surveillance/)
+- **Innovation**
+  - [Storage for the AI Era](https://www.seagate.com/innovation/ai/)
+  - [Mozaic 3+ Platform](https://www.seagate.com/innovation/mozaic/)
+  - [MACH.2 Multi-Actuator](https://www.seagate.com/innovation/multi-actuator-hard-drives/)
+  - [Areal Density](https://www.seagate.com/innovation/areal-density/)
+  - [Composable Infrastructure](https://www.seagate.com/innovation/composable-infrastructure/)
+- **[Support](https://www.seagate.com/support/)**
+  - [Product Support](https://www.seagate.com/support/products/)
+  - [Software Downloads](https://www.seagate.com/support/downloads/)
+  - [Warranty & Replacements](https://www.seagate.com/support/warranty-and-replacements/)
+  - [Data Recovery Services](https://www.seagate.com/support/data-recovery-services/)
+  - [Contact Us](https://www.seagate.com/contacts/)
+- **About**
+  - [Our Story](https://www.seagate.com/our-story/)
+  - [ESG](https://www.seagate.com/esg/)
+  - [Trust Center](https://www.seagate.com/trust/)
+  - [Jobs](https://www.seagate.com/jobs/)
+  - [Investors](https://investors.seagate.com/overview/default.aspx)
+- [Store](https://www.seagate.com/products/shop/)
+
+---
+
+- [Blog](https://www.seagate.com/blog/)
+- [Partners](https://www.seagate.com/partner-programs/)
