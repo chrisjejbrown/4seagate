@@ -12,6 +12,7 @@
       "button",
       "cards",
       "carousel",
+      "carousel-hero",
       "columns",
       "embed",
       "fragment",
@@ -43,6 +44,12 @@
     "id": "carousel",
     "components": [
       "carousel-item"
+    ]
+  },
+  {
+    "id": "carousel-hero",
+    "components": [
+      "carousel-hero-item"
     ]
   },
   {

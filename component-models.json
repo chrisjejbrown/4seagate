@@ -206,6 +206,55 @@
     ]
   },
   {
+    "id": "carousel-hero",
+    "fields": [
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Auto Rotate",
+            "children": [
+              {
+                "name": "Auto Rotate",
+                "value": "auto-rotate"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "carousel-hero-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "media_image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_imageAlt",
+        "value": "",
+        "label": "Background Alt"
+      },
+      {
+        "component": "richtext",
+        "name": "content_text",
+        "value": "",
+        "label": "Slide Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "columns",
     "fields": [
       {
