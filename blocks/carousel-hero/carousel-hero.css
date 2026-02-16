@@ -29,6 +29,7 @@
   width: 100%;
   min-height: min(50vw, calc(100dvh - var(--header-height)));
   background-color: #1b1b1b;
+  overflow: hidden;
 }
 
 .carousel-hero .carousel-hero-slide .carousel-hero-slide-image {
@@ -168,12 +169,14 @@
   .carousel-hero .carousel-hero-slide .carousel-hero-slide-content {
     order: 1;
     flex: 0 0 50%;
+    box-sizing: border-box;
     padding: 60px 48px;
   }
 
   .carousel-hero .carousel-hero-slide .carousel-hero-slide-image {
     order: 2;
     flex: 0 0 50%;
+    box-sizing: border-box;
     padding: 40px;
   }
 
