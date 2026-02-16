@@ -137,7 +137,19 @@ export default async function decorate(block) {
       const indicator = document.createElement('li');
       indicator.classList.add('carousel-hero-slide-indicator');
       indicator.dataset.targetSlide = idx;
-      indicator.innerHTML = `<button type="button" aria-label="${placeholders.showSlide || 'Show Slide'} ${idx + 1} ${placeholders.of || 'of'} ${rows.length}"></button>`;
+
+      // Extract eyebrow and heading from slide content for indicator text
+      const content = slide.querySelector('.carousel-hero-slide-content');
+      const heading = content?.querySelector('h1, h2, h3');
+      const headingText = heading?.textContent?.trim() || '';
+      // Eyebrow is text before the heading
+      const eyebrow = content?.firstChild?.nodeType === Node.TEXT_NODE
+        ? content.firstChild.textContent.trim()
+        : '';
+      const title = eyebrow || headingText;
+      const desc = eyebrow ? headingText : '';
+
+      indicator.innerHTML = `<button type="button" aria-label="${placeholders.showSlide || 'Show Slide'} ${idx + 1} ${placeholders.of || 'of'} ${rows.length}"><span class="indicator-title">${title}</span><span class="indicator-desc">${desc}</span></button>`;
       slideIndicators.append(indicator);
     }
     row.remove();
