@@ -1,4 +1,5 @@
 mountpoints:
   /:
-    url: https://content.da.live/chrisjejbrown/seagate/
-    type: markup
+    url: "https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-block-collection-xwalk/main"
+    type: "markup"
+    suffix: ".html"
