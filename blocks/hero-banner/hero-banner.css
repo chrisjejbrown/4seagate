@@ -5,33 +5,16 @@
 
 .hero-banner {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero-banner h1,
-.hero-banner h2,
-.hero-banner h3,
-.hero-banner h4,
-.hero-banner h5,
-.hero-banner h6,
-.hero-banner p {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero-banner.no-image * {
-  color: var(--text-color);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
 .hero-banner picture {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
 }
 
 .hero-banner img {
@@ -40,8 +23,81 @@
   height: 100%;
 }
 
+.hero-banner .hero-banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  width: 100%;
+}
+
+.hero-banner h1,
+.hero-banner h2,
+.hero-banner h3,
+.hero-banner h4,
+.hero-banner h5,
+.hero-banner h6 {
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.hero-banner h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero-banner p {
+  color: #fff;
+  margin: 0 0 16px;
+  max-width: 600px;
+}
+
+.hero-banner a.button:any-link {
+  background-color: var(--accent-color, #6ebe49);
+  border-color: var(--accent-color, #6ebe49);
+  color: #000;
+  font-weight: 500;
+}
+
+.hero-banner.no-image {
+  background-color: var(--light-color);
+}
+
+.hero-banner.no-image h1,
+.hero-banner.no-image h2,
+.hero-banner.no-image h3,
+.hero-banner.no-image h4,
+.hero-banner.no-image h5,
+.hero-banner.no-image h6,
+.hero-banner.no-image p {
+  color: var(--text-color);
+}
+
+/* Dark scrim overlay for text readability */
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 30%) 50%, transparent 100%);
+  z-index: 0;
+}
+
+.hero-banner.no-image::before {
+  display: none;
+}
+
 @media (width >= 900px) {
   .hero-banner {
-    padding: 40px 32px;
+    min-height: 500px;
+  }
+
+  .hero-banner .hero-banner-content {
+    padding: 80px 32px;
+  }
+
+  .hero-banner h2 {
+    font-size: 48px;
   }
 }
