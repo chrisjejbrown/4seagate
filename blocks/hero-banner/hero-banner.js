@@ -1,24 +1,33 @@
 export default function decorate(block) {
-  const picture = block.querySelector('picture');
-  if (!picture) {
+  const row = block.querySelector(':scope > div');
+  if (!row) return;
+
+  const cols = [...row.querySelectorAll(':scope > div')];
+  const pictureCol = cols[0];
+  const textCol = cols[1];
+
+  const picture = pictureCol?.querySelector('picture');
+  if (picture) {
+    // Move picture to be a direct child for absolute positioning
+    block.prepend(picture);
+    // Ensure eager loading for below-fold background images
+    const img = picture.querySelector('img');
+    if (img) img.loading = 'eager';
+  } else {
     block.classList.add('no-image');
     return;
   }
 
-  // Move picture to be a direct child of the block for absolute positioning
-  block.prepend(picture);
+  // Create content wrapper from text column
+  if (textCol) {
+    const content = document.createElement('div');
+    content.classList.add('hero-banner-content');
+    while (textCol.firstChild) {
+      content.appendChild(textCol.firstChild);
+    }
+    block.appendChild(content);
+  }
 
-  // Move text content out of nested divs into a content wrapper
-  const contentDiv = document.createElement('div');
-  contentDiv.className = 'hero-banner-content';
-  const textElements = block.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
-  textElements.forEach((el) => contentDiv.append(el));
-
-  // Remove the original row/column structure
-  const rows = block.querySelectorAll(':scope > div');
-  rows.forEach((row) => row.remove());
-
-  // Re-add picture and content wrapper
-  block.append(picture);
-  block.append(contentDiv);
+  // Remove original row structure
+  row.remove();
 }

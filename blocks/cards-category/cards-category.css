@@ -1,3 +1,4 @@
+/* Explore All Products - horizontal scrolling category cards */
 .cards-category > ul {
   list-style: none;
   margin: 0;
@@ -62,5 +63,16 @@
 
   .cards-category > ul > li {
     width: calc((100% - 120px) / 6);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-category > ul > li {
+    width: 176px;
+  }
+
+  .cards-category > ul {
+    overflow-x: visible;
+    flex-wrap: wrap;
   }
 }

@@ -77,7 +77,14 @@ function createSlide(row, slideIndex, carouselId) {
   slide.setAttribute('id', `carousel-hero-${carouselId}-slide-${slideIndex}`);
   slide.classList.add('carousel-hero-slide');
 
-  row.querySelectorAll(':scope > div').forEach((column, colIdx) => {
+  const columns = [...row.querySelectorAll(':scope > div')];
+  // Skip first column if it contains only text (xwalk item type name)
+  if (columns.length > 2 && !columns[0].querySelector('img, picture, a')) {
+    columns[0].remove();
+    columns.shift();
+  }
+
+  columns.forEach((column, colIdx) => {
     column.classList.add(`carousel-hero-slide-${colIdx === 0 ? 'image' : 'content'}`);
     slide.append(column);
   });

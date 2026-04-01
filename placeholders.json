@@ -1,11 +1,11 @@
 {
   "data": [
-    { "key": "carousel", "value": "Carousel" },
-    { "key": "previousslide", "value": "Previous Slide" },
-    { "key": "nextslide", "value": "Next Slide" },
-    { "key": "showslide", "value": "Show Slide" },
-    { "key": "of", "value": "of" },
-    { "key": "carouselslidecontrols", "value": "Carousel Slide Controls" }
+    { "Key": "carousel", "Text": "Carousel" },
+    { "Key": "previousslide", "Text": "Previous Slide" },
+    { "Key": "nextslide", "Text": "Next Slide" },
+    { "Key": "showslide", "Text": "Show Slide" },
+    { "Key": "of", "Text": "of" },
+    { "Key": "carouselslidecontrols", "Text": "Carousel Slide Controls" }
   ],
   ":type": "sheet"
 }
