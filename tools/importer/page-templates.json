@@ -1,0 +1,122 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.seagate.com/"
+      ],
+      "description": "Seagate corporate homepage with hero banners, product categories, promotional content, and brand messaging",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            ".FeatureContentLayoutCarousel"
+          ]
+        },
+        {
+          "name": "cards-product",
+          "instances": [
+            ".CardLayoutFeaturedProducts"
+          ]
+        },
+        {
+          "name": "cards-category",
+          "instances": [
+            ".CardLayoutAllProducts"
+          ]
+        },
+        {
+          "name": "cards-resource",
+          "instances": [
+            ".CardLayout.CardLayout-bg--black",
+            ".CardLayout.CardLayout-bg--white"
+          ]
+        },
+        {
+          "name": "hero-banner",
+          "instances": [
+            ".ContentLayoutCarousel"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Carousel",
+          "selector": ".FeatureContentLayoutCarousel",
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Featured Products",
+          "selector": ".CardLayoutFeaturedProducts",
+          "style": null,
+          "blocks": [
+            "cards-product"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Explore All Products",
+          "selector": ".CardLayoutAllProducts",
+          "style": "dark",
+          "blocks": [
+            "cards-category"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Storage at Scale",
+          "selector": [
+            ".Blurb",
+            ".CardLayout.CardLayout-bg--black"
+          ],
+          "style": "dark",
+          "blocks": [
+            "cards-resource"
+          ],
+          "defaultContent": [
+            ".Blurb h2",
+            ".Blurb p"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Latest Resources",
+          "selector": ".CardLayout.CardLayout-bg--white",
+          "style": null,
+          "blocks": [
+            "cards-resource"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Corporate Message",
+          "selector": ".ContentLayoutCarousel",
+          "style": null,
+          "blocks": [
+            "hero-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Footnotes",
+          "selector": ".Footnotes",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".Footnotes-list"
+          ]
+        }
+      ]
+    }
+  ]
+}

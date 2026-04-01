@@ -12,6 +12,15 @@
   background-color: var(--background-color);
 }
 
+.section.dark .cards-resource > ul > li {
+  background-color: transparent;
+  border-color: rgb(255 255 255 / 20%);
+}
+
+.section.dark .cards-resource > ul > li .cards-resource-card-body {
+  color: var(--text-color-inverted);
+}
+
 .cards-resource .cards-resource-card-body {
   margin: 16px;
 }
