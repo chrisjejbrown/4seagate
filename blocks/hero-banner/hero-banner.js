@@ -15,6 +15,7 @@ export default function decorate(block) {
     if (img) img.loading = 'eager';
   } else {
     block.classList.add('no-image');
+    return;
   }
 
   // Create content wrapper from text column

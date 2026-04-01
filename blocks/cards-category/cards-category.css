@@ -51,6 +51,19 @@
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (width >= 900px) {
+  .cards-category > ul {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .cards-category > ul > li {
+    width: calc((100% - 120px) / 6);
+  }
 }
 
 @media (width >= 900px) {
