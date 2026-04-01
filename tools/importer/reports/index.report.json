@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.seagate.com/",
+  "path": "index",
+  "timestamp": "2026-03-31T14:14:29.421Z",
+  "title": "Leaders in mass-capacity storage | Seagate US",
+  "template": "homepage",
+  "blocks": [
+    "carousel-hero",
+    "cards-product",
+    "cards-category",
+    "cards-resource",
+    "cards-resource",
+    "hero-banner"
+  ]
+}

@@ -5,43 +5,116 @@
 
 .hero-banner {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.hero-banner h1,
-.hero-banner h2,
-.hero-banner h3,
-.hero-banner h4,
-.hero-banner h5,
-.hero-banner h6,
-.hero-banner p {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero-banner.no-image * {
-  color: var(--text-color);
-}
-
-.hero-banner picture {
+/* Dark scrim over background image */
+.hero-banner::before {
+  content: '';
   position: absolute;
-  z-index: -1;
   inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  z-index: 0;
+  background-color: rgb(0 0 0 / 80%);
 }
 
-.hero-banner img {
+/* Background picture - absolute fill */
+.hero-banner > picture {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+.hero-banner > picture img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
+/* Content overlay */
+.hero-banner .hero-banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+  padding: 60px 48px;
+  text-align: center;
+}
+
+.hero-banner .hero-banner-content h1,
+.hero-banner .hero-banner-content h2,
+.hero-banner .hero-banner-content h3 {
+  font-size: var(--heading-font-size-xl);
+  line-height: 1.2;
+  color: white;
+  margin: 0 0 16px;
+}
+
+.hero-banner .hero-banner-content p {
+  font-size: var(--body-font-size-l);
+  color: white;
+  margin: 0 0 24px;
+  opacity: 0.9;
+}
+
+/* White outline button on image background - needs high specificity to beat dark section rule */
+main .section .hero-banner .hero-banner-content a.button:any-link {
+  border-color: white;
+  background-color: transparent;
+  color: white;
+}
+
+main .section .hero-banner .hero-banner-content a.button:hover,
+main .section .hero-banner .hero-banner-content a.button:focus {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+/* No-image variant */
+.hero-banner.no-image {
+  min-height: unset;
+  padding: 40px 24px;
+}
+
+.hero-banner.no-image::before {
+  display: none;
+}
+
+.hero-banner.no-image .hero-banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-banner.no-image .hero-banner-content h1,
+.hero-banner.no-image .hero-banner-content h2,
+.hero-banner.no-image .hero-banner-content h3 {
+  color: var(--text-color);
+}
+
+.hero-banner.no-image .hero-banner-content p {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+.section.dark .hero-banner.no-image .hero-banner-content h1,
+.section.dark .hero-banner.no-image .hero-banner-content h2,
+.section.dark .hero-banner.no-image .hero-banner-content h3,
+.section.dark .hero-banner.no-image .hero-banner-content p {
+  color: var(--text-color-inverted);
+}
+
 @media (width >= 900px) {
-  .hero-banner {
-    padding: 40px 32px;
+  .hero-banner .hero-banner-content {
+    padding: 80px 64px;
+  }
+
+  .hero-banner .hero-banner-content h1,
+  .hero-banner .hero-banner-content h2 {
+    font-size: 36px;
+    line-height: 44px;
   }
 }

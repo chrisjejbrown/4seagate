@@ -228,6 +228,13 @@ button:disabled:hover {
   cursor: unset;
 }
 
+/* Primary CTA links - Seagate green */
+a.button:any-link {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--text-color-inverted);
+}
+
 a.button.secondary,
 button.secondary {
   background-color: unset;
@@ -303,8 +310,9 @@ main .section.dark a:any-link {
 }
 
 main .section.dark a.button:any-link {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
   color: var(--text-color-inverted);
-  border-color: var(--text-color-inverted);
 }
 
 main .section.dark a.button:hover,

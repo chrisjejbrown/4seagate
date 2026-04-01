@@ -1,19 +1,46 @@
+/* Explore All Products - horizontal scrolling category cards */
 .cards-category > ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  display: flex;
   gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.cards-category > ul::-webkit-scrollbar {
+  display: none;
 }
 
 .cards-category > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: none;
+  background-color: transparent;
+  flex: 0 0 auto;
+  width: 176px;
+  scroll-snap-align: start;
 }
 
 .cards-category .cards-category-card-body {
-  margin: 16px;
+  margin: 8px 0 0;
+}
+
+.cards-category .cards-category-card-body h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+}
+
+.cards-category .cards-category-card-body h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.cards-category .cards-category-card-body h3 a:hover {
+  text-decoration: underline;
 }
 
 .cards-category .cards-category-card-image {
@@ -22,6 +49,17 @@
 
 .cards-category > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .cards-category > ul > li {
+    width: 176px;
+  }
+
+  .cards-category > ul {
+    overflow-x: visible;
+    flex-wrap: wrap;
+  }
 }
